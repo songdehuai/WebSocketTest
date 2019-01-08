@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="8dp">
+
+
+        <EditText
+            android:id="@+id/ip_et"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="IP"
+            android:text="http://192.168.2.159:8080/websocket-spring-demo/webSocket/webSocketEndPoint" />
+
+        <EditText
+            android:id="@+id/port_et"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="端口" />
+
+        <Button
+            android:id="@+id/connect_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="连接" />
+
+        <EditText
+            android:id="@+id/name_et"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="name" />
+
+        <EditText
+            android:id="@+id/pass_et"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="pass" />
+
+        <Button
+            android:id="@+id/login_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="登录" />
+
+        <EditText
+            android:id="@+id/message_et"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="message" />
+
+        <Button
+            android:id="@+id/send_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="发送" />
+
+        <EditText
+            android:id="@+id/log_et"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginTop="8dp"
+            android:background="#f5f5f5"
+            android:editable="false"
+            android:gravity="left"
+            android:hint="等待消息"
+            android:padding="4dp"
+            android:textColor="@color/colorPrimary"
+            android:textColorHint="@color/colorPrimary"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+</ScrollView>
